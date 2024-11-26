@@ -1,0 +1,42 @@
+<div class="content-manager-list">
+
+  <div class="content-title-button">
+    <h3>{{title}}</h3>
+    <button>
+      +Add
+    </button>
+  </div>
+  <div class="content-input">
+    <input [(ngModel)]="searchName" placeholder="Search by Name and Email" />
+    <span class="search-icson">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    </span>
+  </div>
+    <table class="content-table">
+      <thead>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Company</th>
+          <th>whatsapp</th>
+          <th>created At</th>
+          <th>Options</th>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let manager of managers">
+          <td>{{ manager.name }}</td>
+          <td>{{ manager.email }}</td>
+          <td>{{ manager.company }}</td>
+          <td>{{ manager.whatsapp }}</td>
+          <td>{{ manager.createdAt }}</td>
+          <td>
+            <a [routerLink]="['/edit', manager.id]">
+              <button>Editar</button>
+            </a>
+            <!-- <button (click)="editManager(manager.id)">Editar</button> -->
+            <button (click)="deleteManager(manager.id)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

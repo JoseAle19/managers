@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()">
+    <label>Company</label>
+    <input [(ngModel)]="manager.company" name="company" required />
+  
+    <label>Name</label>
+    <input [(ngModel)]="manager.name" name="name" required />
+  
+    <label>Country</label>
+    <input [(ngModel)]="manager.country" name="country" />
+  
+    <label>WhatsApp</label>
+    <input [(ngModel)]="manager.whatsapp" name="whatsapp" required />
+  
+    <label>Email</label>
+    <input [(ngModel)]="manager.email" name="email" type="email" required />
+  
+    <button type="submit">{{ isEdit ? 'Actualizar' : 'Guardar' }}</button>
+  </form>
+  

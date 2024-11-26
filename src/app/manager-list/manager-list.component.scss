@@ -1,0 +1,82 @@
+.content-manager-list {
+    background-image: url('/assets/background.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.content-title-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 90%;
+}
+.content-title-button h3{
+    color: white;
+    font-family: sans-serif;
+}
+
+.content-title-button button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    border: solid 1px white;
+    background-color: transparent;
+    color: white    ;
+}
+
+
+
+
+.content-input{
+padding: 20px 40px;
+display: flex;
+justify-content: space-between;
+gap: 10px;
+background-color: #221C30;
+width: 90%;
+}
+
+.content-input input{
+    display: flex;
+    flex-grow: 1;
+    border-radius: 5px;
+    border: none;
+    background-color: #393643;
+    color: white;
+}
+
+.search-icson{
+    background-color: #393643;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.content-table{
+    width: 90%;
+    padding: 10px 0px;
+}
+
+.content-table thead th{
+    background-color: #905CB4;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.content-table tbody tr td{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    // border-radius: 5px;
+    border-bottom:  2px solid white ;
+    
+}
